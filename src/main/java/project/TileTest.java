@@ -11,7 +11,7 @@ public class TileTest {
 //        Red is Hearts, Black is Spades, Green is Clubs and Orange is Diamonds.
         Tile t = new Tile("R",1, false);
 
-        Assert.assertEquals(true, t.isOccupiedByPlayer());
+        Assert.assertEquals(false, t.isOccupiedByPlayer());
         Assert.assertEquals("R", t.getSuite());
         Assert.assertEquals(1, t.getvalue());
     }
