@@ -36,4 +36,8 @@ public class Tile {
     public int getRank() {
         return this.rank;
     }
+
+    public void setOccupied(boolean o){
+        this.occupied = o;
+    }
 }
