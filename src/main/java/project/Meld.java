@@ -66,4 +66,25 @@ public class Meld {
         else
             return false;
     }
+
+    public void addGroup(ArrayList<Tile> grp){
+        group.add(grp);
+
+    }
+
+    public void addRun(ArrayList<Tile> rn){
+        run.add(rn);
+
+    }
+
+    public ArrayList<ArrayList<Tile>> getAllMelds(){
+        ArrayList<ArrayList<Tile>> melds = new ArrayList<ArrayList<Tile>>();
+
+        melds.addAll(group);
+        melds.addAll(run);
+
+        return melds;
+    }
+
+    // need to add print function laster on
 }
