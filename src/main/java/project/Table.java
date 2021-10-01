@@ -19,6 +19,10 @@ public class Table {
         return this.players;
     }
 
+    public Deck getDeck() {
+        return this.deck;
+    }
+
     // how many players
     // make those players
     // assign random 14 tiles to player
