@@ -69,13 +69,14 @@ public class Deck {
     }
 
     public Tile findTile(String suite, int rank){
+        Tile temp = new Tile();
         for(Tile t: deckList){
-            if(t.getRank() == rank && t.getSuite() == suite && !t.isOccupiedByPlayer()){
+            if(t.getRank() == rank && t.getSuite() == suite){
                 t.setOccupied(true);
-                return t;
+                temp = t;
             }
         }
-        return null;
+        return temp;
     }
 
 

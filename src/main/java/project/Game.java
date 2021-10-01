@@ -8,11 +8,13 @@ public class Game {
     private Table table;
     Player currPlayer;
     String winner;
+    Meld meld;
 
     public Game(){
         this.table = new Table();
         this.currPlayer = new Player();
         this.winner = "";
+        this.meld = new Meld();
     }
 
     public void initializeGame() {
@@ -29,6 +31,10 @@ public class Game {
 
     public Table getTable() {
         return table;
+    }
+
+    public Meld getMeld() {
+        return meld;
     }
 
     public void playGame(){

@@ -44,4 +44,10 @@ public class Player {
         this.capacity++;
 
     }
+
+    public void removeTileInHand(Tile t){
+        this.player_hand.getHand().remove(t);
+        this.capacity--;
+
+    }
 }
