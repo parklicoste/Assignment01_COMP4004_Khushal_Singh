@@ -92,10 +92,10 @@ public class MeldTest {
 
 
         ArrayList<Tile> check2 = new ArrayList<Tile>();
-        check2.add(t1);
-        check2.add(t2);
-        check2.add(t3);
         check2.add(t4);
+        check2.add(t5);
+        check2.add(t6);
+        check2.add(t7);
 
         boolean runOrGroup2 = m.checkMeld(check2);
 
