@@ -11,7 +11,7 @@ public class PlayerTest {
 
     @Test
     public void testPlayer() {
-        Assert.assertEquals("Bob", p1.getName());
+        Assert.assertEquals("", p1.getName());
     }
 
     @Test

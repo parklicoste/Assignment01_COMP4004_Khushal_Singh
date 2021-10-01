@@ -7,7 +7,7 @@ public class Player {
     Hand player_hand;
 
     public Player() {
-        this.name= "Bob";
+        this.name= "";
         this.player_hand = new Hand();
     }
 
