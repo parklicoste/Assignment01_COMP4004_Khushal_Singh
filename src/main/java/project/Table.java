@@ -5,10 +5,14 @@ import java.util.Scanner;
 
 public class Table {
 
-    private ArrayList<Player> players = new ArrayList<Player>();
+    private ArrayList<Player> players;
+    private Deck deck;
 
     public Table() {
-
+        players = new ArrayList<Player>();
+        deck =  new Deck();
+        deck.makeDeck();   // making a new deck
+        deck.shuffleDeck(); // shuffling the tiles inside the deck
     }
 
     public ArrayList<Player> getPlayers() {
@@ -47,6 +51,19 @@ public class Table {
 
     public void insertPlayer(Player p){
         players.add(p);
+    }
+
+    public void assignTilesToPlayer(Player p){
+
+        for(int i=0; i<104 && p.getCapacity() < 14; i++)
+            if(deck.makeHand() != null)
+                this.insertTileInPlayerHand(deck.makeHand(), p);
+            else
+                System.out.println("No More Tiles Left");
+    }
+
+    public void insertTileInPlayerHand(Tile t, Player p) {
+        p.insertTileInHand(t);
     }
 
 }
