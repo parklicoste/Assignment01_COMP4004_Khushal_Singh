@@ -43,7 +43,10 @@ public class Table {
             System.out.println(players.get(i).getName());
         }
 
+    }
 
+    public void insertPlayer(Player p){
+        players.add(p);
     }
 
 }
