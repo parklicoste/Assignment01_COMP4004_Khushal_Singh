@@ -66,4 +66,13 @@ public class Table {
         p.insertTileInHand(t);
     }
 
+    public void printPlayerHand(Player p){
+        Printlist pl  = new Printlist();
+        pl.printArrayListOfTiles(p.getPlayer_hand());
+    }
+
+    public void printDeck(){
+        deck.printDeck();
+    }
+
 }
