@@ -59,4 +59,41 @@ public class Deck {
 //        else return sendTile;
         return null;
     }
+
+    public Tile drawOneTile() { // for drawing 1 tile after 14
+        for (int i = 0; i < 104; i++) {
+            if (!deckList.get(i).isOccupiedByPlayer())
+                return deckList.get(i);
+        }
+        return null;
+    }
+
+    public Tile findTile(String suite, int rank){
+        for(Tile t: deckList){
+            if(t.getRank() == rank && t.getSuite() == suite && !t.isOccupiedByPlayer()){
+                t.setOccupied(true);
+                return t;
+            }
+        }
+        return null;
+    }
+
+
+    public void printDeck(){
+//        for (Tile t : deckList) {
+//            t.toString();
+//        }
+        System.out.println(this.toString());
+    }
+
+    @Override
+    public String toString() {
+        String[] tileArray = new String[deckList.size()];
+        for (int i = 0; i < deckList.size(); i++) {
+            tileArray[i] = this.deckList.get(i).toString();
+            //t.toString();
+        }
+
+        return "{ " + Arrays.toString(tileArray).replaceAll("\\[|\\]|,|", "") + " }";
+    }
 }
