@@ -30,4 +30,19 @@ public class TableTest {
         Assert.assertEquals(3, t.getPlayers().size()); // check for players on the table
 
     }
+
+    @Test
+    public void testTablePlayerHands() {
+        for(Player p : t.getPlayers()) {
+            t.assignTilesToPlayer(p);
+        }
+
+        for(Player p : t.getPlayers()) {
+            Assert.assertEquals(14, p.getPlayer_hand().size()); // check for player's hand on the table
+        }
+
+
+
+    }
+
 }
