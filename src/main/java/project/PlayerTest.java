@@ -27,7 +27,7 @@ public class PlayerTest {
 
     @Test
     public void testNoOfTiles() {
-        Assert.assertEquals(0, p2.getCapacity());
+        Assert.assertEquals(0, p1.getCapacity());
     }
 
     @Test
