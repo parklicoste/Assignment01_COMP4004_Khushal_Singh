@@ -8,14 +8,23 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class DeckTest {
+    Deck deck = new Deck();
 
     @Test
     public void testDeck() {
-        Deck deck = new Deck();
+
         ArrayList<String> suit = new ArrayList<String>(Arrays.asList("R","B","G", "O"));
         Assert.assertEquals(suit , deck.getSuites());   // check for suites
         Assert.assertEquals(Collections.emptyList(), deck.getDeck()); // check for deck
     }
+
+    @Test
+    public void testMakeMyDeck() { // checking if getting 104 elements
+        deck.makeDeck();
+        Assert.assertEquals(104, deck.getDeck().size()); // check for deck size
+    }
+
+
 
 
 }
