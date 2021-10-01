@@ -38,4 +38,10 @@ public class Player {
     public int getCapacity() {
         return capacity;
     }
+    public void insertTileInHand(Tile t){
+
+        this.player_hand.insert(t);
+        this.capacity++;
+
+    }
 }
