@@ -19,6 +19,15 @@ public class PlayerTest {
         Assert.assertEquals(Collections.emptyList(), p1.getPlayer_hand());
     }
 
+    Player p2 = new Player("Khushal");
+    @Test
+    public void testNameOfPlayer() {
+        Assert.assertEquals("Khushal", p2.getName());
+    }
 
+    @Test
+    public void testNoOfTiles() {
+        Assert.assertEquals(0, p2.getCapacity());
+    }
 
 }
