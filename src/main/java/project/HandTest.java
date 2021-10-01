@@ -1,5 +1,6 @@
 package project;
 
+import junit.framework.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class HandTest {
+public class HandTest extends TestCase {
 
     Hand h = new Hand();
 
@@ -27,6 +28,7 @@ public class HandTest {
         h.insert(t2);
         h.insert(t3);
         h.insert(t4);
+        
 
         Assert.assertEquals(4, h.getHand().size()); // check for 4 tiles in hand
     }

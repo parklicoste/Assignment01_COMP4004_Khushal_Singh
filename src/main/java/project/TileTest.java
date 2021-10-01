@@ -1,10 +1,11 @@
 package project;
 
+import junit.framework.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class TileTest {
+public class TileTest extends TestCase {
 
     @Test
     public void testTile() {

@@ -1,12 +1,13 @@
 package project;
 
+import junit.framework.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MeldTest {
+public class MeldTest extends TestCase {
 
     @Test
     public void testMeldGroupAndRun() {

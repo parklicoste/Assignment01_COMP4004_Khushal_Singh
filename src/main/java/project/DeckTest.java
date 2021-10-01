@@ -1,5 +1,6 @@
 package project;
 
+import junit.framework.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class DeckTest {
+public class DeckTest extends TestCase {
     Deck deck = new Deck();
 
     @Test

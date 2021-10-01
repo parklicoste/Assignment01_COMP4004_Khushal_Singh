@@ -1,11 +1,12 @@
 package project;
 
+import junit.framework.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Collections;
 
-public class PlayerTest {
+public class PlayerTest extends TestCase {
 
     Player p1 = new Player();
 

@@ -1,9 +1,10 @@
 package project;
 
+import junit.framework.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GameTest {
+public class GameTest extends TestCase {
     Game g = new Game();
 
     @Test
