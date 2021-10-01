@@ -44,4 +44,19 @@ public class Deck {
     public void shuffleDeck(){
         Collections.shuffle(deckList);
     }
+
+    public Tile makeHand() { // sending 14 tiles one by one
+//        Tile sendTile = new Tile();
+        for (Tile t : deckList) {
+            if (t.isOccupiedByPlayer() != true) {
+                t.setOccupied(true);
+                return t;
+//                sendTile = t;
+//                break;
+            }
+        }
+//        if(sendTile.getvalue() == 0) return null;
+//        else return sendTile;
+        return null;
+    }
 }
