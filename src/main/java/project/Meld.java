@@ -90,15 +90,16 @@ public class Meld {
         melds.addAll(group);
         melds.addAll(run);
 
-        Printlist p= new Printlist();
-
-        System.out.println("All Melds: " );
-        for(ArrayList<Tile> list: melds)
-            p.printArrayListOfTiles(list);
-
-
         return melds;
     }
 
-    // need to add print function laster on
+    // need to add print function later on
+
+    public void printMelds(){
+        Printlist p= new Printlist();
+        ArrayList<ArrayList<Tile>> allMelds = getAllMelds();
+        for(ArrayList<Tile> m: allMelds){
+            p.printArrayListOfTiles(m);
+        }
+    }
 }
