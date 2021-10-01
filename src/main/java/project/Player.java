@@ -5,15 +5,18 @@ import java.util.*;
 public class Player {
     private String name;
     Hand player_hand;
+    int capacity;
 
     public Player() {
         this.name= "";
         this.player_hand = new Hand();
+        this.capacity = 0;
     }
 
     public Player(String n) {
         this.name = n;
         this.player_hand = new Hand();
+        this.capacity = 0;
     }
 
     public String getName() {
@@ -30,5 +33,9 @@ public class Player {
 
     public ArrayList<Tile> getPlayer_hand() {
         return player_hand.getHand();
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
 }
