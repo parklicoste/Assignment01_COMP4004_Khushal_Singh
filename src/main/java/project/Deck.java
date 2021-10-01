@@ -24,4 +24,24 @@ public class Deck {
     public ArrayList<Tile> getDeck(){
         return this.deckList;
     }
+
+    public void makeDeck(){
+        for(int i=0; i<suites.size(); i++){
+            for(int j=0; j<2; j++){
+                for(int k=0; k<13; k++){
+                    if(k+1 > 10){
+                        deckList.add(new Tile(suites.get(i),k+1, 10, false ));
+                    }
+                    else{
+                        deckList.add(new Tile(suites.get(i), k+1, k+1, false));
+                    }
+
+                }
+            }
+        }
+    }
+
+    public void shuffleDeck(){
+        Collections.shuffle(deckList);
+    }
 }
