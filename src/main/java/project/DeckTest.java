@@ -24,6 +24,16 @@ public class DeckTest {
         Assert.assertEquals(104, deck.getDeck().size()); // check for deck size
     }
 
+    @Test
+    public void testMakeMyHand() { // checking if getting 104 elements
+        deck.makeDeck();
+        deck.shuffleDeck();
+        Tile t1 = deck.makeHand();
+        Tile t2 = deck.makeHand();
+        Assert.assertEquals(true, t1.isOccupiedByPlayer()); // check for deck size
+        Assert.assertEquals(true, t2.isOccupiedByPlayer());
+    }
+
 
 
 
