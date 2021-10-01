@@ -47,9 +47,9 @@ public class Table {
             }
         }
 
-        for(int i = 0; i < numPlayer; i++){
-            System.out.println(players.get(i).getName());
-        }
+//        for(int i = 0; i < numPlayer; i++){       // for displaying players
+//            System.out.println(players.get(i).getName());
+//        }
 
     }
 
