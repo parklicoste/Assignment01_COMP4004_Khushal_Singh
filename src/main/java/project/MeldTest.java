@@ -32,8 +32,8 @@ public class MeldTest {
         boolean runOrGroup = m.checkMeld(check);
 
         Assert.assertEquals(true, runOrGroup);  // checking if its a meld
-        Assert.assertEquals(true, m.isRun());   // checking it's a run
-        Assert.assertEquals(false, m.isGroup());// checking its not group
+        Assert.assertEquals(true, m.isRun(check));   // checking it's a run
+        Assert.assertEquals(false, m.isGroup(check));// checking its not group
 
     }
 
@@ -56,8 +56,8 @@ public class MeldTest {
         boolean runOrGroup = m.checkMeld(check);
 
         Assert.assertEquals(true, runOrGroup);  // checking if its a meld
-        Assert.assertEquals(false, m.isRun());   // checking it's not a run
-        Assert.assertEquals(true, m.isGroup());// checking it's a group
+        Assert.assertEquals(false, m.isRun(check));   // checking it's not a run
+        Assert.assertEquals(true, m.isGroup(check));// checking it's a group
 
     }
 }
