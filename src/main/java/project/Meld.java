@@ -69,11 +69,18 @@ public class Meld {
 
     public void addGroup(ArrayList<Tile> grp){
         group.add(grp);
+        Printlist p= new Printlist();
+        System.out.println("Meld added: " );
+        p.printArrayListOfTiles(grp);
 
     }
 
     public void addRun(ArrayList<Tile> rn){
         run.add(rn);
+        group.add(rn);
+        Printlist p= new Printlist();
+        System.out.println("Meld added: " );
+        p.printArrayListOfTiles(rn);
 
     }
 
@@ -82,6 +89,13 @@ public class Meld {
 
         melds.addAll(group);
         melds.addAll(run);
+
+        Printlist p= new Printlist();
+
+        System.out.println("All Melds: " );
+        for(ArrayList<Tile> list: melds)
+            p.printArrayListOfTiles(list);
+
 
         return melds;
     }
