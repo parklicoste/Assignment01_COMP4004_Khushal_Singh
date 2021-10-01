@@ -61,7 +61,7 @@ public class MeldTest {
     }
 
     @Test
-    public void testAddSettoMeld() {
+    public void testAddSetToMeld() {
         Meld m = new Meld();
 
         Tile t1 = new Tile("R",11,10, true);
