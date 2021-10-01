@@ -17,4 +17,8 @@ public class Hand {
     public ArrayList<Tile> getHand() {
         return this.hand;
     }
+
+    public void insert(Tile t){ // function for rigging the tiles for player
+        this.hand.add(t);
+    }
 }
