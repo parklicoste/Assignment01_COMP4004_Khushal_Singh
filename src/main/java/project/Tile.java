@@ -4,18 +4,20 @@ import java.util.*;
 
 public class Tile {
     private String suite;
-    private int value;
+    private int value, rank;
     private boolean occupied;
 
     public Tile(){
         this.suite = "";
         this.value = 0;
+        this.rank = 0;
         this.occupied = false;
     }
 
-    public Tile(String s, int v, boolean o){
+    public Tile(String s, int r, int v, boolean o){
         this.suite = s;
         this.value = v; // value can't be greater tha 10
+        this.rank = r;
         this.occupied = o;
     }
 
@@ -29,5 +31,9 @@ public class Tile {
 
     public boolean isOccupiedByPlayer(){
         return this.occupied;
+    }
+
+    public int getRank() {
+        return this.rank;
     }
 }
