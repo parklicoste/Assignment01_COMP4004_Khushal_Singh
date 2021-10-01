@@ -77,7 +77,6 @@ public class Meld {
 
     public void addRun(ArrayList<Tile> rn){
         run.add(rn);
-        group.add(rn);
         Printlist p= new Printlist();
         System.out.println("Meld added: " );
         p.printArrayListOfTiles(rn);
