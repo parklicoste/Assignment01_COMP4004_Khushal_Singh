@@ -40,4 +40,12 @@ public class Tile {
     public void setOccupied(boolean o){
         this.occupied = o;
     }
+
+    public void printTile(){
+        System.out.println(this);
+    }
+
+    public String toString(){//overriding the toString() method
+        return this.suite+ this.rank+" ";
+    }
 }
